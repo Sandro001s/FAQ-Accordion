@@ -1,0 +1,100 @@
+.work-sans,body {
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+  
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(275, 100%, 97%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.headimg{
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+
+.container{
+    width: 750px;
+    max-height: 1250px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.h1div{
+    display: flex;
+    gap: 20px;
+}
+
+h1{
+    font-size: 2.7rem;
+}
+
+.div{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    font-size: 1.1rem;
+}
+
+.questions{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.plus,.minus{
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    width: 35px;
+}
+
+.minus{
+    display: none;
+}
+
+.line::after{
+    content: "";
+    position: absolute;
+    width: 650px;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.25);
+}
+
+.info{
+    width: 500px;
+    height: 100px;
+    display: none;
+    margin-top: 20px;
+}
+
+.btn{
+    position: absolute;
+    right: 0;
+    margin-bottom: 25px;
+}
+
+.none{
+    display: block;
+}
